@@ -1,0 +1,72 @@
+
+.dialog{
+  animation-duration: 0.5s; 
+  animation-name: animate-dialog;
+  animation-fill-mode: backwards;
+  position:fixed;
+  height:100vh;
+  left:100%;
+  top:0;
+  transform: translate(-100%);
+  width:30vw;
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+}
+
+@keyframes animate-dialog {
+  0% {
+    opacity: 0;
+    transform: translate(0%)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%)
+  }
+}
+
+.header{
+  display:flex;
+  gap:30px;
+  padding:10px 30px;
+}
+
+.clearButton{
+  margin-left:auto;
+  font-size:1rem;
+  padding:8px 16px;
+  border-radius: 10px;
+  border:2px solid black;
+}
+.closeButton{
+  font-size:1rem;
+  color:red;
+  padding:8px;
+  border-radius: 30px;
+  border:2px solid red;
+}
+.cardContainer{
+  display:grid;
+  grid-auto-rows:25%;
+  height:80%;
+  overflow:scroll;
+  gap:30px;
+}
+.bottom{
+  display:flex;
+  align-items: center;
+  flex:1;
+  justify-content: space-between;
+}
+.checkoutButton{
+  width:30%;
+  height:80%;
+  padding:10px;
+  font-size:1.5rem;
+  border-radius: 10px;
+  
+}
+.checkoutLink{
+  text-decoration: none;
+  color:black
+}
